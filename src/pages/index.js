@@ -1,11 +1,12 @@
-import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+import * as React from "react";
+import { Link } from "gatsby";
+// import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
-import Seo from "../components/seo"
-import * as styles from "../components/index.module.css"
+// import Seo from "../components/seo"
+// import * as styles from "../components/index.module.css"
 
+/*
 const links = [
   {
     text: "Tutorial",
@@ -32,7 +33,9 @@ const links = [
       "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
   },
 ]
+*/
 
+/*
 const samplePageLinks = [
   {
     text: "Page 2",
@@ -45,7 +48,9 @@ const samplePageLinks = [
   { text: "Server Side Rendering", url: "using-ssr" },
   { text: "Deferred Static Generation", url: "using-dsg" },
 ]
+*/
 
+/*
 const moreLinks = [
   { text: "Join us on Discord", url: "https://gatsby.dev/discord" },
   {
@@ -66,9 +71,11 @@ const moreLinks = [
   },
   { text: "Issues", url: "https://github.com/gatsbyjs/gatsby/issues" },
 ]
+*/
 
-const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
+// const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
 
+/*
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
@@ -118,12 +125,27 @@ const IndexPage = () => (
     ))}
   </Layout>
 )
+*/
+
+const IndexPage = () => {
+  return (
+    <Layout pageTitle="Index">
+      <h1>Lucy Lee</h1>
+      <p>Up and Coming Software Development Engineer</p>
+      <p>(And gamer, and artist)</p>
+      <ul>
+        <li><Link to="/projects">Sample Projects</Link></li>
+      </ul>
+    </Layout>
+  )
+};
 
 /**
  * Head export to define metadata for the page
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
-export const Head = () => <Seo title="Home" />
+// export const Head = () => <Seo title="Home" />
+export const Head = () => <title>Lucy Lee</title>
 
-export default IndexPage
+export default IndexPage;
