@@ -6,8 +6,7 @@ import Layout from "../components/layout"
 
 const ProjectsPage = () => {
   return (
-    <Layout pageTitle="Projects">
-      <h1>Quests Completed</h1>
+    <Layout pageTitle="Quests Completed">
       <ul>
       <li>Internship at TYCA</li>
       <li>Tech Talent Pipeline Bootcamp</li>

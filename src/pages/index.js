@@ -129,8 +129,7 @@ const IndexPage = () => (
 
 const IndexPage = () => {
   return (
-    <Layout pageTitle="Index">
-      <h1>Lucy Lee</h1>
+    <Layout pageTitle="Lucy Lee">
       <p>Up and Coming Software Development Engineer</p>
       <p>(And gamer, and artist)</p>
       <ul>
