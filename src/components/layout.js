@@ -11,8 +11,15 @@ import { useStaticQuery, graphql, Link } from "gatsby";
 
 import Header from "./header";
 import "./layout.css";
+import {
+  container,
+  heading,
+  navLinks,
+  navLinkItem,
+  navLinkText
+} from './layout.module.css'
 
-const Layout = ({ children }) => {
+const Layout = ({ pageTitle, children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -27,6 +34,7 @@ const Layout = ({ children }) => {
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div
+        className={container}
         style={{
           margin: `0 auto`,
           maxWidth: `var(--size-content)`,
@@ -34,12 +42,16 @@ const Layout = ({ children }) => {
         }}
       >
         <nav>
-          <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/projects">Quest Log</Link></li>
+          <ul className={navLinks}>
+            <li className={navLinkItem}><Link to="/" className={navLinkText}>Home</Link></li>
+            <li className={navLinkItem}><Link to="/projects" className={navLinkText}>Quest Log</Link></li>
+            <li className={navLinkItem}><Link to="/resume" className={navLinkText}>Resume</Link></li>
           </ul>
         </nav>
-        <main>{children}</main>
+        <main>
+          <h1 className={heading}>{pageTitle}</h1>
+          {children}
+        </main>
         <footer
           style={{
             marginTop: `var(--space-5)`,
