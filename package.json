@@ -5,12 +5,11 @@
   "version": "0.1.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
-    "gatsby": "^4.22.1",
+    "gatsby": "^5.7.0",
     "gatsby-background-image": "^1.6.0",
     "gatsby-plugin-image": "^2.23.0",
     "gatsby-plugin-manifest": "^4.22.0",
     "gatsby-plugin-sharp": "^4.23.0",
-    "gatsby-remark-embed-video": "^3.2.1",
     "gatsby-source-filesystem": "^4.23.0",
     "gatsby-transformer-sharp": "^4.22.0",
     "gbimage-bridge": "^0.2.2",
