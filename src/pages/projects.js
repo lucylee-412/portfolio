@@ -6,13 +6,16 @@ import Layout from "../components/layout"
 
 const ProjectsPage = () => {
   return (
-    <Layout pageTitle="Quests Completed">
+    <Layout pageTitle="Projects">
       <ul>
       <li>Internship at TYCA</li>
+        <ul>
+          <li>PowerPoint Summary</li>
+        </ul>
       <li>Tech Talent Pipeline Bootcamp</li>
         <ul>
-          <li>Main Story: Capstone Project</li>
-          <li>Sidequest: API Practice</li>
+          <li>Final Week: Capstone Project</li>
+          <li>Assignment: API Practice</li>
         </ul>
       </ul>
       <Link to="/">Go back to the homepage</Link>
