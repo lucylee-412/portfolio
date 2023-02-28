@@ -35,49 +35,72 @@ const ProjectTimeline = ({ pageTitle, children }) => {
     <Timeline
       sx={{
         display: `inline-block`,
+        maxWidth: `300px`,
+        paddingTop: `11rem`,
+        paddingRight: `7rem`,
+        verticalAlign: `top`
       }}
     >
       <TimelineItem>
         <TimelineOppositeContent color="text.secondary">
-          09:30 am
+          Feb 2023
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot />
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent>Eat</TimelineContent>
+        <TimelineContent>
+          To-Do App
+        </TimelineContent>
       </TimelineItem>
 
       <TimelineItem>
         <TimelineOppositeContent color="text.secondary">
-          10:00 am
+          Jun 2022
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot />
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent>Code</TimelineContent>
+        <TimelineContent>TYCA Internship</TimelineContent>
       </TimelineItem>
 
       <TimelineItem>
         <TimelineOppositeContent color="text.secondary">
-          12:00 am
+          Jan 2022
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot />
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent>Sleep</TimelineContent>
+        <TimelineContent>
+          TTP Bootcamp
+        </TimelineContent>
       </TimelineItem>
 
       <TimelineItem>
         <TimelineOppositeContent color="text.secondary">
-          9:00 am
+          Jul 2021
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineDot />
+          <TimelineConnector />
+        </TimelineSeparator>
+        <TimelineContent>
+          Unadat Internship
+        </TimelineContent>
+      </TimelineItem>
+
+      <TimelineItem>
+        <TimelineOppositeContent color="text.secondary">
+          Jan 2021
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot />
         </TimelineSeparator>
-        <TimelineContent>Repeat</TimelineContent>
+        <TimelineContent>
+          QueensCC Software Engineering Course
+        </TimelineContent>
       </TimelineItem>
     </Timeline>
   )
