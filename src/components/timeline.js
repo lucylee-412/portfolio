@@ -68,7 +68,7 @@ const ProjectTimeline = ({ pageTitle, children }) => {
         sx={{
           display: `inline-block`,
           maxWidth: `400px`,
-          paddingTop: `7rem`,
+          paddingTop: `7.5rem`,
           marginLeft: `-2rem`,
           marginRight: `1rem`,
           verticalAlign: `top`
