@@ -33,7 +33,22 @@ const theme = createTheme({
       main: 'rgb(78,103,145)',
       contrastText: 'rgb(78,103,145)',
     }
-  }
+  },
+  typography: {
+    fontFamily: [
+      '"Barlow Condensed"',
+      '-apple-system',
+      'BlinkMacSystemFont',
+      '"Segoe UI"',
+      'Roboto',
+      '"Helvetica Neue"',
+      'Arial',
+      'sans-serif',
+      '"Apple Color Emoji"',
+      '"Segoe UI Emoji"',
+      '"Segoe UI Symbol"',
+    ].join(','),
+  },
 });
 
 const ProjectTimeline = ({ pageTitle, children }) => {
@@ -52,9 +67,10 @@ const ProjectTimeline = ({ pageTitle, children }) => {
       <Timeline
         sx={{
           display: `inline-block`,
-          maxWidth: `300px`,
-          paddingTop: `11rem`,
-          paddingRight: `2rem`,
+          maxWidth: `400px`,
+          paddingTop: `7rem`,
+          marginLeft: `-2rem`,
+          marginRight: `1rem`,
           verticalAlign: `top`
         }}
       >
@@ -129,7 +145,7 @@ const ProjectTimeline = ({ pageTitle, children }) => {
             <TimelineDot sx={{backgroundColor: 'rgb(78,103,145)'}}/>
           </TimelineSeparator>
           <TimelineContent>
-            QueensCC Software Engineering Course
+            Queens CC SWE Bootcamp
           </TimelineContent>
         </TimelineItem>
       </Timeline>
