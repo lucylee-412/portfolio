@@ -10,6 +10,7 @@ import PropTypes from "prop-types";
 import { useStaticQuery, graphql, Link } from "gatsby";
 
 import Header from "./header";
+import ProjectTimeline from "./timeline";
 import "./layout.css";
 import {
   container,
@@ -33,9 +34,11 @@ const Layout = ({ pageTitle, children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+      <ProjectTimeline />
       <div
         className={container}
         style={{
+          display: `inline-block`,
           margin: `0 auto`,
           maxWidth: `var(--size-content)`,
           padding: `var(--size-gutter)`,
@@ -48,8 +51,14 @@ const Layout = ({ pageTitle, children }) => {
             <li className={navLinkItem}><Link to="/resume" className={navLinkText}>Resume</Link></li>
           </ul>
         </nav>
-        <main>
+        
+        <main
+          style={{
+            display: `inline-block`
+          }}
+        >
           <h1 className={heading}>{pageTitle}</h1>
+          
           {children}
         </main>
         <footer
