@@ -18,6 +18,23 @@ import TimelineDot from '@mui/lab/TimelineDot';
 import TimelineOppositeContent, {
   timelineOppositeContentClasses,
 } from '@mui/lab/TimelineOppositeContent';
+import { createTheme, Theme, ThemeProvider, styled } from '@mui/material/styles';
+
+// const YellowTimelineDot = styled(TimelineDot)({
+//   color: 'rgb(255,240,185)'
+// });
+// const YellowTimelineConnector = styled(TimelineConnector)({
+//   color: 'rgb(255,240,185)'
+// });
+
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: 'rgb(78,103,145)',
+      contrastText: 'rgb(78,103,145)',
+    }
+  }
+});
 
 const ProjectTimeline = ({ pageTitle, children }) => {
   const data = useStaticQuery(graphql`
@@ -31,78 +48,92 @@ const ProjectTimeline = ({ pageTitle, children }) => {
   `)
 
   return (
-    
-    <Timeline
-      sx={{
-        display: `inline-block`,
-        maxWidth: `300px`,
-        paddingTop: `11rem`,
-        paddingRight: `7rem`,
-        verticalAlign: `top`
-      }}
-    >
-      <TimelineItem>
-        <TimelineOppositeContent color="text.secondary">
-          Feb 2023
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineDot />
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>
-          To-Do App
-        </TimelineContent>
-      </TimelineItem>
+    <ThemeProvider theme={theme}>
+      <Timeline
+        sx={{
+          display: `inline-block`,
+          maxWidth: `300px`,
+          paddingTop: `11rem`,
+          paddingRight: `2rem`,
+          verticalAlign: `top`
+        }}
+      >
+        <TimelineItem>
+          <TimelineOppositeContent color="text.secondary">
+            Present
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineDot sx={{backgroundColor: 'rgb(78,103,145)'}}/>
+            <TimelineConnector sx={{backgroundColor: 'rgb(78,103,145)'}}/>
+          </TimelineSeparator>
+          <TimelineContent>
+            Portfolio
+          </TimelineContent>
+        </TimelineItem>
 
-      <TimelineItem>
-        <TimelineOppositeContent color="text.secondary">
-          Jun 2022
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineDot />
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>TYCA Internship</TimelineContent>
-      </TimelineItem>
+        <TimelineItem>
+          <TimelineOppositeContent color="text.secondary">
+            Feb 2023
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+          <TimelineDot sx={{backgroundColor: 'rgb(78,103,145)'}}/>
+            <TimelineConnector sx={{backgroundColor: 'rgb(78,103,145)'}}/>
+          </TimelineSeparator>
+          <TimelineContent>
+            To-Do App
+          </TimelineContent>
+        </TimelineItem>
 
-      <TimelineItem>
-        <TimelineOppositeContent color="text.secondary">
-          Jan 2022
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineDot />
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>
-          TTP Bootcamp
-        </TimelineContent>
-      </TimelineItem>
+        <TimelineItem>
+          <TimelineOppositeContent color="text.secondary">
+            Jun 2022
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineDot sx={{backgroundColor: 'rgb(78,103,145)'}}/>
+            <TimelineConnector sx={{backgroundColor: 'rgb(78,103,145)'}}/>
+          </TimelineSeparator>
+          <TimelineContent>TYCA Internship</TimelineContent>
+        </TimelineItem>
 
-      <TimelineItem>
-        <TimelineOppositeContent color="text.secondary">
-          Jul 2021
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineDot />
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent>
-          Unadat Internship
-        </TimelineContent>
-      </TimelineItem>
+        <TimelineItem>
+          <TimelineOppositeContent color="text.secondary">
+            Jan 2022
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineDot sx={{backgroundColor: 'rgb(78,103,145)'}}/>
+            <TimelineConnector sx={{backgroundColor: 'rgb(78,103,145)'}}/>
+          </TimelineSeparator>
+          <TimelineContent>
+            TTP Bootcamp
+          </TimelineContent>
+        </TimelineItem>
 
-      <TimelineItem>
-        <TimelineOppositeContent color="text.secondary">
-          Jan 2021
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineDot />
-        </TimelineSeparator>
-        <TimelineContent>
-          QueensCC Software Engineering Course
-        </TimelineContent>
-      </TimelineItem>
-    </Timeline>
+        <TimelineItem>
+          <TimelineOppositeContent color="text.secondary">
+            Jul 2021
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineDot sx={{backgroundColor: 'rgb(78,103,145)'}}/>
+            <TimelineConnector sx={{backgroundColor: 'rgb(78,103,145)'}}/>
+          </TimelineSeparator>
+          <TimelineContent>
+            Unadat Internship
+          </TimelineContent>
+        </TimelineItem>
+
+        <TimelineItem>
+          <TimelineOppositeContent color="text.secondary">
+            Jan 2021
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineDot sx={{backgroundColor: 'rgb(78,103,145)'}}/>
+          </TimelineSeparator>
+          <TimelineContent>
+            QueensCC Software Engineering Course
+          </TimelineContent>
+        </TimelineItem>
+      </Timeline>
+    </ThemeProvider>
   )
 }
 
