@@ -11,6 +11,7 @@ import { useStaticQuery, graphql, Link } from "gatsby";
 
 import Header from "./header";
 import ProjectTimeline from "./timeline";
+import logo from "../images/logo.png";
 import "./layout.css";
 import {
   container,
@@ -34,6 +35,13 @@ const Layout = ({ pageTitle, children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+      <img 
+        style={{
+          position: `fixed`
+        }}
+        src={logo} 
+        alt="Cartoon representation of Lucy greeting with a speech bubble that says hi" 
+      />
       <ProjectTimeline />
       <div
         className={container}
