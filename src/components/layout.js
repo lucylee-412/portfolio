@@ -35,13 +35,6 @@ const Layout = ({ pageTitle, children }) => {
   return (
     <>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <img 
-        style={{
-          position: `fixed`
-        }}
-        src={logo} 
-        alt="Cartoon representation of Lucy greeting with a speech bubble that says hi" 
-      />
       <ProjectTimeline />
       <div
         className={container}

@@ -39,8 +39,11 @@ header {
 body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+  background-attachment: scroll;
   background-color: rgb(164,201,242);
-  /* background-color: #FAF9F6; */
+  background-image: url(../images/logo.png);
+  background-position-y: 3.45rem;
+  background-repeat: no-repeat;
   color: var(--color-text);
   font-family: sans-serif;
   font-family: var(--font-sans);
