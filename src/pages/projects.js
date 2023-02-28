@@ -8,15 +8,30 @@ const ProjectsPage = () => {
   return (
     <Layout pageTitle="Projects">
       <ul>
-      <li>Internship at TYCA</li>
-        <ul>
-          <li>PowerPoint Summary</li>
-        </ul>
-      <li>Tech Talent Pipeline Bootcamp</li>
-        <ul>
-          <li>Final Week: Capstone Project</li>
-          <li>Assignment: API Practice</li>
-        </ul>
+        <li>Personal Coding Challenges</li>
+          <ul>
+            <li><Link to="/projects/2023-02-16">To-Do List</Link></li>
+          </ul>
+        <li>Internship at TYCA</li>
+          <ul>
+            <li><Link to="/projects/2022-08-16">PowerPoint Summary of Internship Work</Link></li>
+          </ul>
+        <li>Tech Talent Pipeline Bootcamp</li>
+          <ul>
+            <li><Link to="/projects/2022-01-28">Final Week: Capstone Project</Link></li>
+          </ul>
+        <li>Queensborough Community College 2021 Software Engineering Micro-Credential</li>
+          <ul>
+            <li>
+              <Link 
+                to="https://lucylee-412.github.io/microSE_2021/Index/index.html"
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                Final Project Portfolio
+              </Link>
+            </li>
+          </ul>
       </ul>
       <Link to="/">Go back to the homepage</Link>
     </Layout>
