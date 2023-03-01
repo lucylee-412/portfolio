@@ -18,7 +18,11 @@ import TimelineDot from '@mui/lab/TimelineDot';
 import TimelineOppositeContent, {
   timelineOppositeContentClasses,
 } from '@mui/lab/TimelineOppositeContent';
-import { createTheme, Theme, ThemeProvider, styled } from '@mui/material/styles';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+
+import {
+  timelineText
+} from './layout.module.css'
 
 // const YellowTimelineDot = styled(TimelineDot)({
 //   color: 'rgb(255,240,185)'
@@ -83,7 +87,7 @@ const ProjectTimeline = ({ pageTitle, children }) => {
             <TimelineConnector sx={{backgroundColor: 'rgb(78,103,145)'}}/>
           </TimelineSeparator>
           <TimelineContent>
-            Portfolio
+            <Link to="/" className={timelineText}>Portfolio</Link>
           </TimelineContent>
         </TimelineItem>
 
@@ -96,7 +100,7 @@ const ProjectTimeline = ({ pageTitle, children }) => {
             <TimelineConnector sx={{backgroundColor: 'rgb(78,103,145)'}}/>
           </TimelineSeparator>
           <TimelineContent>
-            To-Do App
+          <Link to="/" className={timelineText}>To-Do App</Link>
           </TimelineContent>
         </TimelineItem>
 
@@ -108,7 +112,9 @@ const ProjectTimeline = ({ pageTitle, children }) => {
             <TimelineDot sx={{backgroundColor: 'rgb(78,103,145)'}}/>
             <TimelineConnector sx={{backgroundColor: 'rgb(78,103,145)'}}/>
           </TimelineSeparator>
-          <TimelineContent>TYCA Internship</TimelineContent>
+          <TimelineContent>
+            <Link to="/" className={timelineText}>TYCA Internship</Link>
+          </TimelineContent>
         </TimelineItem>
 
         <TimelineItem>
@@ -145,7 +151,7 @@ const ProjectTimeline = ({ pageTitle, children }) => {
             <TimelineDot sx={{backgroundColor: 'rgb(78,103,145)'}}/>
           </TimelineSeparator>
           <TimelineContent>
-            Queens CC SWE Bootcamp
+            EverUp SWE Certification
           </TimelineContent>
         </TimelineItem>
       </Timeline>
