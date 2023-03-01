@@ -21,3 +21,11 @@
   font-weight: bold;
   text-decoration: none;
 }
+.timeline-text {
+  color: #333;
+  list-style: none;
+  text-decoration: none;
+}
+.timeline-text:hover {
+  font-weight: bold;
+}
