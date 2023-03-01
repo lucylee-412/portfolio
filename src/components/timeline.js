@@ -100,7 +100,7 @@ const ProjectTimeline = ({ pageTitle, children }) => {
             <TimelineConnector sx={{backgroundColor: 'rgb(78,103,145)'}}/>
           </TimelineSeparator>
           <TimelineContent>
-          <Link to="/" className={timelineText}>To-Do App</Link>
+          <Link to="/projects/2023-Feb" className={timelineText}>To-Do App</Link>
           </TimelineContent>
         </TimelineItem>
 
@@ -113,7 +113,7 @@ const ProjectTimeline = ({ pageTitle, children }) => {
             <TimelineConnector sx={{backgroundColor: 'rgb(78,103,145)'}}/>
           </TimelineSeparator>
           <TimelineContent>
-            <Link to="/" className={timelineText}>TYCA Internship</Link>
+            <Link to="/projects/2022-Jun-Aug" className={timelineText}>TYCA Internship</Link>
           </TimelineContent>
         </TimelineItem>
 
@@ -126,7 +126,7 @@ const ProjectTimeline = ({ pageTitle, children }) => {
             <TimelineConnector sx={{backgroundColor: 'rgb(78,103,145)'}}/>
           </TimelineSeparator>
           <TimelineContent>
-            TTP Bootcamp
+            <Link to="/projects/2022-Jan" className={timelineText}>TTP Bootcamp</Link>
           </TimelineContent>
         </TimelineItem>
 
@@ -139,7 +139,7 @@ const ProjectTimeline = ({ pageTitle, children }) => {
             <TimelineConnector sx={{backgroundColor: 'rgb(78,103,145)'}}/>
           </TimelineSeparator>
           <TimelineContent>
-            Unadat Internship
+          <Link to="/projects/2021-Jul-Aug" className={timelineText}>Unadat Internship</Link>
           </TimelineContent>
         </TimelineItem>
 
