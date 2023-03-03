@@ -7,6 +7,7 @@ import Layout from "../../components/layout"
 const UnadatPage = () => {
   return (
     <Layout pageTitle="2021 Summer Internship at Unadat">
+      <p>(Due to NDA, I cannot show any source code.)</p>
       <Link to="/">Go back to the homepage</Link>
     </Layout>
   )

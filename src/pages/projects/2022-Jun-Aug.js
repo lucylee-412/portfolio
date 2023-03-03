@@ -7,6 +7,7 @@ import Layout from "../../components/layout"
 const TycaPage = () => {
   return (
     <Layout pageTitle="2022 Summer Internship at TYCA">
+      <p>(Due to NDA, I cannot show any source code.)</p>
       <Link to="/">Go back to the homepage</Link>
     </Layout>
   )

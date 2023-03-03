@@ -7,6 +7,10 @@ import Layout from "../../components/layout"
 const MeopetsPage = () => {
   return (
     <Layout pageTitle="TTP Capstone Project: Meopets">
+      <b>GitHub:</b>
+      <ul>
+        <li><a href="https://github.com/lucylee-412/meopets-frontend" target="_blank" rel="noopener noreferrer">Frontend</a></li>
+      </ul>
       <Link to="/">Go back to the homepage</Link>
     </Layout>
   )

@@ -7,6 +7,11 @@ import Layout from "../../components/layout"
 const ToDoPage = () => {
   return (
     <Layout pageTitle="To-Do App">
+      <b>GitHub:</b>
+      <ul>
+        <li><a href="https://github.com/lucylee-412/todo-app-react" target="_blank" rel="noopener noreferrer">Frontend</a></li>
+        <li><a href="https://github.com/lucylee-412/todo-app" target="_blank" rel="noopener noreferrer">Backend</a></li>
+      </ul>
       <Link to="/">Go back to the homepage</Link>
     </Layout>
   )
